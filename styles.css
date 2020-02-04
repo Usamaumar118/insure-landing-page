@@ -1,0 +1,33 @@
+:root{
+
+    /* COLORS  */
+
+
+    --color-primary-violet: hsl(256, 26%, 20%);
+    --color-primary-blue: hsl(216, 30%, 68%);
+
+    --color-dark-violet: hsl(270, 9%, 17%);
+    --color-grayish-violet: hsl(273, 4%, 51%);
+    --color-light-grey: hsl(0, 0%, 98%);
+
+
+
+}
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'DM Serif Display', serif;
+    box-sizing: border-box;
+}
+
