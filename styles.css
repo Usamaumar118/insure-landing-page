@@ -49,6 +49,13 @@ a {
 h1,h2,h3,h4,h5,h6{
     font-family: 'DM Serif Display', serif;
 }
+.btn{
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    border: 2px solid var(--color-primary-violet);
+    text-transform: uppercase;
+}
 
 /* //Main Styles */
 
@@ -75,11 +82,13 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold;
 }
 
+
+
 .nav__list__item--btn a{
     padding: 1rem 1.5rem;
     margin-right: 0;
     color: var(--color-primary-violet);
-    border: 2px solid var(--color-primary-violet);
+    border: 2px solid );
 }
 
 
@@ -150,3 +159,73 @@ h1,h2,h3,h4,h5,h6{
     right: 10%;
 
 }
+
+
+/* Features section */
+
+.features{
+    margin: 25rem 10%;
+}
+
+.features__heading{
+    font-size: 4.5rem;
+    padding: 1.5rem 0;
+    position: relative;
+}
+
+.features__heading::before{
+    content: '';
+    width: 15rem;
+    background-color: var(--color-grayish-violet);
+    height: .15rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.features__items{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.features__item{
+    width: 33%;
+    margin-right: 5rem;
+}
+
+.features__item--heading{
+    font-size: 2rem;
+    margin: 2rem 0;
+}   
+
+.features__item--para{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--color-grayish-violet)
+}
+
+
+.cta{
+    background: url('images/bg-pattern-how-we-work-desktop.svg') var(--color-primary-violet);
+    background-position: top right;
+    background-repeat: no-repeat;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 7rem;
+    color: #fff;
+}
+.cta__heading{
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: .9;
+}
+.cta__btn{
+    border-color: #fff;
+    color: #fff;
+}
+
