@@ -44,6 +44,7 @@ ul{
 a {
     text-decoration: none;
     color: var(--color-grayish-violet);
+    transition: color .4s;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -65,6 +66,7 @@ h1,h2,h3,h4,h5,h6{
     align-items: center;
     justify-content: space-between;
     padding: 2rem 10%;
+    text-transform: uppercase;
 }
 
 .nav__list{
@@ -80,17 +82,25 @@ h1,h2,h3,h4,h5,h6{
     letter-spacing: .25rem;
     font-family: karla , sans-serif;
     font-weight: bold;
+    transition: color .4s;
 }
-
+.nav__list__item a:hover{
+    color: var(--color-primary-violet);
+}
 
 
 .nav__list__item--btn a{
     padding: 1rem 1.5rem;
     margin-right: 0;
     color: var(--color-primary-violet);
-    border: 2px solid;
+    border: 2px solid var(--color-primary-violet);
+    transition: color .4s,
+                background-color .4s;
 }
-
+.nav__list__item--btn a:hover{
+    color: #fff;
+    background-color: var(--color-primary-violet);
+}
 
 /* //Hero Section */
 
@@ -150,6 +160,14 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 3rem;
     color: var(--color-light-grey);
     border: 2px solid var(--color-light-grey);
+    transition: color .4s,
+    background-color .4s;
+}
+
+.hero__content--btn:hover,
+.cta__btn:hover{
+    color: var(--color-primary-violet);
+    background-color: #fff;
 }
 
 
@@ -227,6 +245,8 @@ h1,h2,h3,h4,h5,h6{
 .cta__btn{
     border-color: #fff;
     color: #fff;
+    transition: color .4s,
+    background-color .4s;
 }
 
 .social{
@@ -255,7 +275,7 @@ LINKS SECTION */
 
 .links{
     width: 80%;
-    margin: 0 auto 10rem;
+    margin: 0 auto 5rem;
     text-transform: uppercase;
     font-weight: bold;
     display: flex;
@@ -280,7 +300,9 @@ LINKS SECTION */
     font-size: 1.4rem;
     line-height: 1.5;
 }
-
+.links__a:hover{
+    text-decoration: underline;
+}
 
 
 
