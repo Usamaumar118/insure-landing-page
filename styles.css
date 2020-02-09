@@ -27,7 +27,126 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'DM Serif Display', serif;
+    font-family: 'Karla', serif;
     box-sizing: border-box;
 }
 
+
+
+
+/* //Basic Resets */
+
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-grayish-violet);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'DM Serif Display', serif;
+}
+
+/* //Main Styles */
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%;
+}
+
+.nav__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list__item{
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+    letter-spacing: .25rem;
+    font-family: karla , sans-serif;
+    font-weight: bold;
+}
+
+.nav__list__item--btn a{
+    padding: 1rem 1.5rem;
+    margin-right: 0;
+    color: var(--color-primary-violet);
+    border: 2px solid var(--color-primary-violet);
+}
+
+
+/* //Hero Section */
+
+
+.hero{
+    background: url('images/bg-pattern-intro-right-desktop.svg') , url('images/bg-pattern-intro-left-desktop.svg') var(--color-primary-violet);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, 0 160% ;
+    background-size: 35rem, 15rem;
+    height: 60vh;
+
+}
+
+
+.hero__content{
+    display: flex;
+    margin: 0 10%;
+}
+
+
+.hero__content--text{
+    max-width: 50%;
+    position: relative;
+}
+.hero__content--heading{
+    font-size: 7rem;
+    font-weight: 300;
+    line-height: .9;
+    margin-top: 3rem;
+
+}
+
+.hero__content--heading::before{
+    content: '';
+    width: 15rem;
+    background-color: #fff;
+    height: .15rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.hero__content--para{
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    line-height: 1.5;
+}
+.hero__content--btn{
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: 3rem;
+    color: var(--color-light-grey);
+    border: 2px solid var(--color-light-grey);
+}
+
+
+.hero__img{
+    position: absolute;
+    top: 17rem;
+    right: 10%;
+
+}
