@@ -317,7 +317,7 @@ LINKS SECTION */
     .hero{
         background-position: bottom right, top left ;
         background-size: 15rem, 10rem;
-        height: 50vh;
+        height: 60vh;
     }
     .hero__content--text{
         max-width: 100%;
