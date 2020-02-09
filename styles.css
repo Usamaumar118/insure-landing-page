@@ -68,17 +68,21 @@ h1,h2,h3,h4,h5,h6{
     padding: 2rem 10%;
     text-transform: uppercase;
 }
-
+.nav__icon{
+    display: none;
+}
 .nav__list{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.nav__list__item:not(:last-child){
+    margin-right: 2rem;
+}
 .nav__list__item{
     font-size: 1.5rem;
-    padding: 1rem 1.5rem;
-    margin-right: 1rem;
+    padding: 1rem 0;
+
     letter-spacing: .25rem;
     font-family: karla , sans-serif;
     font-weight: bold;
@@ -179,6 +183,7 @@ h1,h2,h3,h4,h5,h6{
     position: absolute;
     top: 17rem;
     right: 10%;
+    max-width: 100%;
 
 }
 
@@ -266,6 +271,11 @@ h1,h2,h3,h4,h5,h6{
     color: var(--color-grayish-violet);
     transition: .4s;
 }
+
+.nav__list__item:nth-last-child(1){
+    margin-right: 0rem;
+}
+
 .social__nav__list__item:hover{
     color: var(--color-primary-violet);
 }
@@ -324,8 +334,8 @@ LINKS SECTION */
         width: 100%;
     }
     .hero{
-        background-position: bottom right, top left ;
-        background-size: 15rem, 10rem;
+        background-position: bottom right, -8% 65% ;
+        background-size: 12rem, 8rem;
         height: auto;
         flex-direction: column;
     }
@@ -346,6 +356,9 @@ LINKS SECTION */
         margin-bottom: 3rem;
     }
 
+    .nav__icon{
+        display: block;
+    }
     .features{
         margin: 10rem 10%;
     }
@@ -369,20 +382,27 @@ LINKS SECTION */
 
     .cta{
         flex-direction: column;
+        background: url('images/bg-pattern-how-we-work-mobile.svg') var(--color-primary-violet);
+        background-repeat: no-repeat;
         width: 80%;
         padding: 6rem 3rem;
+        background-position: top right;
     
     }
     .cta__heading{
         font-size: 3.5rem;
-        margin-bottom: 2rem
+        margin-bottom: 2rem;
     }
     .social{
         flex-direction: column;
+        margin: 8rem;
+    }
+    .social__nav__list{
+        margin: 2rem 0;
     }
 
 
-    .nav{
+    .header__nav{
         display: none;
     }
 
