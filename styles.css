@@ -306,7 +306,7 @@ LINKS SECTION */
 
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 490px){
     html{
         font-size: 58%;
         text-align: center;
