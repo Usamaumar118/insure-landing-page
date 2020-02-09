@@ -306,4 +306,89 @@ LINKS SECTION */
 
 
 
+@media screen and (max-width: 400px){
+    html{
+        font-size: 58%;
+        text-align: center;
+    }
+    .header{
+        height: 5rem;
+    }
+    .hero{
+        background-position: bottom right, top left ;
+        background-size: 15rem, 10rem;
+        height: 50vh;
+    }
+    .hero__content--text{
+        max-width: 100%;
+    }
 
+    .hero__img{
+        display: none;
+    }
+    .hero__content--text{
+        width: 100%;
+    }
+    .hero__content--heading{
+        font-size: 4.2rem;
+    }
+
+    .features{
+        margin: 10rem 10%;
+    }
+
+    .features__items{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .features__item{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .features__heading{
+        font-size: 4rem;
+    }
+
+
+    .cta{
+        flex-direction: column;
+        width: 80%;
+        padding: 6rem 3rem;
+    
+    }
+    .cta__heading{
+        font-size: 3.5rem;
+        margin-bottom: 2rem
+    }
+    .social{
+        flex-direction: column;
+    }
+
+
+    .nav{
+        display: none;
+    }
+
+    .links{
+        flex-direction: column;
+        align-items: center;
+    }
+    .links__container{
+        width: 80%;
+        margin-top: 3rem
+    }
+
+    .features__heading::before
+    {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .hero__content--heading::before{
+        content: none;
+    }
+
+}
