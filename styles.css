@@ -170,6 +170,10 @@ h1,h2,h3,h4,h5,h6{
     background-color: #fff;
 }
 
+.hero__img-m{
+    display: none;
+}
+
 
 .hero__img{
     position: absolute;
@@ -291,9 +295,6 @@ LINKS SECTION */
     font-size: 1.4rem;
 }
 
-.links__items{
-
-}
 
 .links__a{
     color: var(--color-primary-violet);
@@ -314,10 +315,19 @@ LINKS SECTION */
     .header{
         height: 5rem;
     }
+
+    .hero__img-m{
+        display: block;
+    }
+
+    .hero__img-m img{
+        width: 100%;
+    }
     .hero{
         background-position: bottom right, top left ;
         background-size: 15rem, 10rem;
-        height: 60vh;
+        height: auto;
+        flex-direction: column;
     }
     .hero__content--text{
         max-width: 100%;
@@ -331,6 +341,9 @@ LINKS SECTION */
     }
     .hero__content--heading{
         font-size: 4.2rem;
+    }
+    .hero__content--btn{
+        margin-bottom: 3rem;
     }
 
     .features{
